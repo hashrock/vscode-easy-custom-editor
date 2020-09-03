@@ -1,0 +1,22 @@
+{
+  "name": "@hashrock/vscode-easy-custom-editor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p ./",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [],
+  "author": "hashrock",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^12.12.0",
+    "@types/vscode": "^1.46.0",
+    "path": "^0.12.7",
+    "typescript": "^3.9.4"
+  }
+}

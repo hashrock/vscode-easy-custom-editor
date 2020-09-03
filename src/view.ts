@@ -5,7 +5,7 @@ export function getViewHtml(cspSource: string, nonce: string, scriptUri: vscode.
 			<html lang="en">
 			<head>
 				<meta charset="UTF-8">
-				<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src ${cspSource} blob:; style-src ${cspSource}; script-src 'nonce-${nonce}';">
+				<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src ${cspSource} blob:; style-src ${cspSource} 'unsafe-inline'; script-src 'nonce-${nonce}';">
 				<meta name="viewport" content="width=device-width, initial-scale=1.0">
 			</head>
 			<body>
